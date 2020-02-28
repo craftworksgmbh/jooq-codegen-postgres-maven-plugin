@@ -196,7 +196,7 @@
                 <artifactId>maven-plugin-plugin</artifactId>
                 <version>3.5.1</version>
                 <configuration>
-                    <goalPrefix>docker-flyway-jooq</goalPrefix>
+                    <goalPrefix>jooq-codegen-postgres</goalPrefix>
                     <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
                 </configuration>
                 <executions>
