@@ -31,7 +31,7 @@ Example setup
                 <inputSchema>public</inputSchema>
             </database>
             <target>
-                <packageName>at.craftworks.haris.gm.jooq</packageName>
+                <packageName>io.github.myuser.myproject.jooq</packageName>
                 <directory>target/generated-sources/jooq</directory>
             </target>
         </generator>
