@@ -4,7 +4,7 @@
 
     <groupId>at.craftworks.tools.maven</groupId>
     <artifactId>jooq-codegen-postgres-maven-plugin</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <name>jOOQ Codegen Postgres Maven Plugin</name>
@@ -25,7 +25,7 @@
         <developerConnection>scm:git:ssh://github.com:craftworksgmbh/jooq-codegen-postgres-maven-plugin.git
         </developerConnection>
         <url>https://github.com/craftworksgmbh/jooq-codegen-postgres-maven-plugin</url>
-      <tag>0.0.3</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <developers>
