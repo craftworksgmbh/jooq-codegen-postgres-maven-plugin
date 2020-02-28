@@ -1,10 +1,14 @@
+# jOOQ Codegen Postgres Maven Plugin
 
+Maven plugin to generate jOOQ classes using dockerized postgres database during code generation phase
+
+# How to Use
 Example setup
 ```xml
 <plugin>
     <groupId>at.craftworks.tools.maven</groupId>
-    <artifactId>docker-flyway-jooq-maven-plugin</artifactId>
-    <version>0.0.7</version>
+    <artifactId>jooq-codegen-postgres-maven-plugin</artifactId>
+    <version>0.0.1</version>
     <executions>
         <execution>
             <id>jooq-codegen</id>
@@ -68,40 +72,4 @@ Example setup
         </dependency>
     </dependencies>
 </plugin>
-```
-
-```xml
-<plugin>
-    <groupId>at.craftworks.tools.maven</groupId>
-    <artifactId>docker-flyway-jooq-maven-plugin</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
-    <executions>
-        <execution>
-            <id>jooq-codegen</id>
-            <phase>generate-sources</phase>
-            <goals>
-                <goal>jooq-generate</goal>
-            </goals>
-        </execution>
-    </executions>
-    <configuration>
-        <dockerImageName>postgres:11</dockerImageName>
-        <flyway>
-            <migrationDirectory>filesystem:${basedir}/src/main/resources/db/migration</migrationDirectory>
-        </flyway>
-        <generator>
-            <database>
-                <name>org.jooq.meta.postgres.PostgresDatabase</name>
-                <includes>.*</includes>
-                <excludes>flyway_schema_history.*</excludes>
-                <inputSchema>public</inputSchema>
-            </database>
-            <target>
-                <packageName>my.project.jooq</packageName>
-                <directory>target/generated-sources/jooq</directory>
-            </target>
-        </generator>
-    </configuration>
-</plugin>
-
 ```
