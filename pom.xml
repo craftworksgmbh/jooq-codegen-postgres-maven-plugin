@@ -8,9 +8,11 @@
     <version>0.0.1</version>
     <packaging>maven-plugin</packaging>
 
-    <name>jooq-codegen-postgres-maven-plugin</name>
-    <description>Maven plugin to generate jOOQ classes using dockerized postgres database during code generation phase
+    <name>jOOQ Codegen Postgres Maven Plugin</name>
+    <description>Maven plugin to generate jOOQ classes using dockerized
+        postgres database during code generation phase
     </description>
+    <url>https://github.com/craftworksgmbh/jooq-codegen-postgres-maven-plugin</url>
 
     <properties>
         <maven.version>2.2.1</maven.version>
