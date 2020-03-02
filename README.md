@@ -8,7 +8,7 @@ Example setup
 <plugin>
     <groupId>at.craftworks.tools.maven</groupId>
     <artifactId>jooq-codegen-postgres-maven-plugin</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
     <executions>
         <execution>
             <id>jooq-codegen</id>
