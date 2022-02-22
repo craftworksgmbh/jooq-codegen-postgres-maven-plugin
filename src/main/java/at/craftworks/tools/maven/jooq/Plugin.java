@@ -9,6 +9,7 @@ import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
 import org.apache.maven.project.MavenProject;
 import org.flywaydb.core.Flyway;
+import org.flywaydb.core.api.output.MigrateResult;
 import org.flywaydb.core.internal.jdbc.DriverDataSource;
 import org.jooq.codegen.GenerationTool;
 import org.jooq.meta.jaxb.Configuration;
@@ -124,7 +125,7 @@ public class Plugin extends AbstractMojo {
         );
     }
 
-    private int flywayMigrate(DataSource dataSource, String[] locations) {
+    private MigrateResult flywayMigrate(DataSource dataSource, String[] locations) {
         Flyway flyway = Flyway.configure()
                 .baselineOnMigrate(false)
                 .dataSource(dataSource)
